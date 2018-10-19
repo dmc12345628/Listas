@@ -1,1 +1,31 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="content">
+  <ion-header>
+      <ion-toolbar color="primary">
+          <ion-title>Paginas</ion-title>
+      </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-list-header>
+        Herramientas
+      </ion-list-header>
+      <button menuToggle ion-item (click)="openPage(tabsPage)">Listas</button>
+      <ion-list-header>
+        Etapa Fiesta
+      </ion-list-header>
+      <button menuToggle ion-item *ngFor="let verbo of etapaFiesta"
+        (click)="openPage(verbo.page)">
+        {{verbo.title}}
+      </button>
+      <ion-list-header>
+        Etapa Encuentro
+      </ion-list-header>
+      <button menuToggle ion-item *ngFor="let verbo of etapaEncuentro"
+        (click)="openPage(verbo.page)">
+        {{verbo.title}}
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content></ion-nav>

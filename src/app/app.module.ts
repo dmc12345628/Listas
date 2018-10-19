@@ -2,11 +2,13 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
-import { AboutPage } from '../pages/about/about';
+import { BautizadosPage } from '../pages/bautizados/bautizados';
 import { ContactPage } from '../pages/contact/contact';
-import { HomePage } from '../pages/home/home';
+import { AmigosPage } from '../pages/amigos/amigos';
 import { TabsPage } from '../pages/tabs/tabs';
+import { MotivarPage } from '../pages/motivar/motivar';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -22,24 +24,27 @@ import { environment } from '../environments/environment';
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
+    BautizadosPage,
     ContactPage,
-    HomePage,
-    TabsPage
+    AmigosPage,
+    TabsPage,
+    MotivarPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    ReactiveFormsModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
+    BautizadosPage,
     ContactPage,
-    HomePage,
-    TabsPage
+    AmigosPage,
+    TabsPage,
+    MotivarPage
   ],
   providers: [
     StatusBar,
