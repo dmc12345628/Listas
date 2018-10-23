@@ -4,11 +4,10 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { BautizadosPage } from '../pages/bautizados/bautizados';
-import { ContactPage } from '../pages/contact/contact';
-import { AmigosPage } from '../pages/amigos/amigos';
-import { TabsPage } from '../pages/tabs/tabs';
-import { MotivarPage } from '../pages/motivar/motivar';
+import { InfoPage } from '../pages/info/info';
+import { PersonasPage } from '../pages/personas/personas';
+import { MotivarPage } from '../pages/procesos/ganar/encuentro/motivar/motivar';
+import { IntegrarPage } from '../pages/procesos/ganar/encuentro/integrar/integrar';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -21,14 +20,18 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 
+// services
+import { ProcesosService } from '../services/procesos/Procesos.service';
+
 @NgModule({
   declarations: [
     MyApp,
-    BautizadosPage,
-    ContactPage,
-    AmigosPage,
-    TabsPage,
-    MotivarPage
+    InfoPage,
+    PersonasPage,
+    // procesos
+    // encuentro
+    MotivarPage,
+    IntegrarPage
   ],
   imports: [
     BrowserModule,
@@ -40,17 +43,20 @@ import { environment } from '../environments/environment';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    BautizadosPage,
-    ContactPage,
-    AmigosPage,
-    TabsPage,
-    MotivarPage
+    InfoPage,
+    PersonasPage,
+    // procesos
+    // encuentro
+    MotivarPage,
+    IntegrarPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     CallNumber,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    // services
+    ProcesosService
   ]
 })
 export class AppModule {}

@@ -1,0 +1,474 @@
+{
+  "Celulas": {
+    "41-1": {
+      "anfitrion": "",
+      "asistente": "claudia-lizeth-hernandez-ayala",
+      "domicilio": "Dátil 24931, Florido III, Tijuana, B.C.",
+      "lider": "Juan Carlos Oregon",
+      "numero": "1",
+      "supervisor": "jesus-daniel-medina-cruz"
+    },
+    "41-2": {
+      "anfitrion": "",
+      "asistente": "lesly-netzay-carrazco-parra",
+      "domicilio": "Dátil 24931, Florido III, Tijuana, B.C.",
+      "lider": "jesus-daniel-medina-cruz",
+      "numero": "2",
+      "supervisor": "jesus-daniel-medina-cruz"
+    },
+    "41-3": {
+      "anfitrion": "",
+      "asistente": "rebeca-raquel-moreno-garcia",
+      "domicilio": "Privada Temozón #34, Delicias III, Tijuana, B.C.",
+      "lider": "jesus-daniel-medina-cruz",
+      "numero": "3",
+      "supervisor": "jesus-daniel-medina-cruz"
+    }
+  },
+  "Iglesias": {
+    "41": {
+      "direccion": "Dátil 24931, Florido III, Tijuana, B.C",
+      "numero": "41",
+      "pastor": "Omar Gamez"
+    }
+  },
+  "Personas": {
+    "aiblis-melanie-perez-garcia": {
+      "celula": "41-3",
+      "direccion": "Delicias III, privada Temozón",
+      "ep": "Sábado - 11:00",
+      "guia": "karla-guadalupe-aguirre-castro",
+      "nacimiento": "2006-09-09",
+      "nombre": "Aiblis Melanie Perez García",
+      "proceso": "ganar",
+      "sexo": "mujer",
+      "telefono": "6642533532"
+    },
+    "alejandro-mejia-rey": {
+      "celula": "41-1",
+      "direccion": "calle encantada lote 8 manzana 141",
+      "nacimiento": "2004-07-14",
+      "nombre": "Alejandro Mejía Rey",
+      "proceso": "ganar",
+      "sexo": "hombre",
+      "telefono": "6644401478"
+    },
+    "alfonso-olvera": {
+      "celula": "41-1",
+      "direccion": "Cañadas del Florido",
+      "nacimiento": "2003-10-24",
+      "nombre": "Alfonso Olvera",
+      "proceso": "ganar",
+      "sexo": "hombre",
+      "telefono": "6644310389"
+    },
+    "angelica-isamar-tovar-hernandez": {
+      "celula": "41-2",
+      "direccion": "Mariano",
+      "nacimiento": "2001-03-02",
+      "nombre": "Angelica Isamar Tovar Hernandez",
+      "proceso": "ganar",
+      "sexo": "mujer",
+      "telefono": "6641969158"
+    },
+    "aylin-frausto": {
+      "celula": "41-3",
+      "direccion": "Florido",
+      "nacimiento": "2000-08-06",
+      "nombre": "Aylin Frausto",
+      "proceso": "ganar",
+      "sexo": "mujer"
+    },
+    "brayan-sanchez": {
+      "celula": "41-3",
+      "direccion": "Delicias III",
+      "ep": "Sábado - 09:00",
+      "guia": "jesus-daniel-medina-cruz",
+      "nacimiento": "2005-07-13",
+      "nombre": "Brayan Sanchez ",
+      "proceso": "ganar",
+      "sexo": "hombre",
+      "telefono": "6671295414"
+    },
+    "carlos-alfonso-hernandez-guszman": {
+      "celula": "",
+      "direccion": "",
+      "ep": "Viernes - 18:00",
+      "guia": "jesus-daniel-medina-cruz",
+      "nacimiento": "2001-01-15",
+      "nombre": "Carlos Alfonso Hernández Guzmán",
+      "proceso": "afirmar",
+      "sexo": "hombre",
+      "telefono": ""
+    },
+    "cecilia-cruz": {
+      "celula": "41-3",
+      "direccion": "Delicias III",
+      "nacimiento": "2001-09-09",
+      "nombre": "Cecilia Cruz",
+      "proceso": "ganar",
+      "sexo": "mujer",
+      "telefono": "6641847985"
+    },
+    "claudia-lizeth-hernandez-ayala": {
+      "bautismo": "2017-08-27",
+      "celula": "41-1",
+      "direccion": "Calle Lila lote 32 Manzana 38, Florido IV",
+      "nombre": "Claudia Lizeth Hernández Ayala",
+      "proceso": "discipular",
+      "sexo": "mujer",
+      "telefono": "6647397283"
+    },
+    "danna": {
+      "celula": "41-2",
+      "direccion": "",
+      "nacimiento": "",
+      "nombre": "Danna",
+      "proceso": "ganar",
+      "sexo": "mujer",
+      "telefono": ""
+    },
+    "danna-priscila-hernandez-garcia": {
+      "celula": "41-2",
+      "direccion": "Calle Granada 9833, Florido II",
+      "nacimiento": "1999-08-06",
+      "nombre": "Danna Priscila Hernández García",
+      "proceso": "discipular",
+      "sexo": "mujer",
+      "telefono": "6645770090"
+    },
+    "diana-alicia-garcia-hernández": {
+      "celula": "41-2",
+      "direccion": "Casas sevilla",
+      "nacimiento": "2007-12-29",
+      "nombre": "Diana Alicia García Hernández",
+      "proceso": "ganar",
+      "sexo": "mujer",
+      "telefono": "6643555000"
+    },
+    "dulce-vianey-ochoa-mancillas": {
+      "celula": "41-2",
+      "direccion": "Calle aguijon Abejas",
+      "nacimiento": "2002-07-05",
+      "nombre": "Dulce Vianey Ochoa Mancillas",
+      "proceso": "ganar",
+      "sexo": "mujer",
+      "telefono": "6647584519"
+    },
+    "eduardo-mejia-rey": {
+      "celula": "41-1",
+      "direccion": "Calle encantada lote 8 manzana 141",
+      "nacimiento": "2006-09-08",
+      "nombre": "Eduardo Mejía Rey",
+      "proceso": "ganar",
+      "sexo": "hombre",
+      "telefono": "6644401478"
+    },
+    "estefany-rivera-castellanos": {
+      "celula": "41-2",
+      "direccion": "Calle nardo, Florido III",
+      "nacimiento": "2003-11-15",
+      "nombre": "Estefany Rivera Castellanos",
+      "proceso": "ganar",
+      "sexo": "mujer",
+      "telefono": "6647918346"
+    },
+    "everardo-jr": {
+      "celula": "41-2",
+      "direccion": "Caslle 10 de mayo 23002",
+      "nacimiento": "2003-02-18",
+      "nombre": "Everardo Jr",
+      "proceso": "ganar",
+      "sexo": "hombre",
+      "telefono": "6646696909"
+    },
+    "gerardo-lopez": {
+      "celula": "41-3",
+      "direccion": "Delicias III Privada Temozon 15220-19",
+      "ep": "Sábado - 13:00",
+      "guia": "jesus-daniel-medina-cruz",
+      "nacimiento": "2000-06-19",
+      "nombre": "Gerardo Lopez",
+      "proceso": "ganar",
+      "sexo": "hombre",
+      "telefono": "6644415067"
+    },
+    "hanna-lizeth-duran-ramirez": {
+      "celula": "41-2",
+      "direccion": "Avenida de las aguas, Villafontana",
+      "nacimiento": "2004-07-05",
+      "nombre": "Hanna Lizeth Durán Ramirez",
+      "proceso": "ganar",
+      "sexo": "mujer",
+      "telefono": "6644815505"
+    },
+    "hector-angel-cruz-morales": {
+      "bautismo": "2017-12-23",
+      "celula": "41-1",
+      "direccion": "Leones #12, Cañadas del florido II",
+      "nombre": "Héctor Ángel Cruz Morales",
+      "proceso": "discipular",
+      "sexo": "hombre",
+      "telefono": "6645142302"
+    },
+    "isis-valeria-covarrubias": {
+      "celula": "41-1",
+      "direccion": "",
+      "ep": "?",
+      "guia": "claudia-lizeth-hernandez-ayala",
+      "nacimiento": "1994-10-13",
+      "nombre": "Isis Valeria Covarrubias",
+      "proceso": "ganar",
+      "sexo": "mujer",
+      "telefono": "6647568261"
+    },
+    "javier-omar-delgado-moreno": {
+      "celula": "41-2",
+      "direccion": "Calle Dátil 9716",
+      "nacimiento": "2008-01-01",
+      "nombre": "Javier Omar Delgado Moreno",
+      "proceso": "ganar",
+      "sexo": "hombre",
+      "telefono": ""
+    },
+    "jesus-daniel-corea-gastelum": {
+      "celula": "41-3",
+      "direccion": "Delicias III Privada Tejocote Edificio D 203",
+      "ep": "Sábado - 15:00",
+      "guia": "jesus-daniel-medina-cruz",
+      "nacimiento": "2005-12-24",
+      "nombre": "Jesús Daniel Guzmán Gastelum",
+      "proceso": "ganar",
+      "sexo": "hombre",
+      "telefono": "6645029605"
+    },
+    "jesus-daniel-medina-cruz": {
+      "celula": "41-2",
+      "direccion": "Calle Colmena 24928-10, Las abejas",
+      "nacimiento": "1996-11-08",
+      "nombre": "Jesús juan Cruz",
+      "proceso": "discipular",
+      "sexo": "hombre",
+      "telefono": "5578630337"
+    },
+    "johana-arisbeth-diaz-juarez": {
+      "celula": "41-2",
+      "direccion": "Calle sandía # 9636 Florido II",
+      "nacimiento": "2005-09-25",
+      "nombre": "Johana Arisbeth Díaz Juarez",
+      "proceso": "ganar",
+      "sexo": "mujer",
+      "telefono": "6644750439"
+    },
+    "juan-carlos-oregon-garcia": {
+      "bautismo": "2010-08-08",
+      "celula": "41-1",
+      "direccion": "",
+      "nombre": "Juan Carlos Oregon García",
+      "proceso": "discipular",
+      "sexo": "hombre",
+      "telefono": "6644378306"
+    },
+    "juan-domingo": {
+      "celula": "",
+      "direccion": "Cañadas del florido, Privada los tulipanes #40",
+      "nacimiento": "",
+      "nombre": "Juan Domingo",
+      "proceso": "ganar",
+      "sexo": "hombre",
+      "telefono": ""
+    },
+    "karla-guadalupe-aguirre-castro": {
+      "celula": "41-3",
+      "direccion": "Delicias III, privada temozón, #32",
+      "ep": "Sábado - 13:00",
+      "guia": "jesus-daniel-medina-cruz",
+      "nacimiento": "2004-05-20",
+      "nombre": "Karla Guadalupe Aguirre Castro",
+      "proceso": "afirmar",
+      "sexo": "mujer",
+      "telefono": "6646699972"
+    },
+    "kenia-alexandra": {
+      "celula": "41-2",
+      "direccion": "Pipila",
+      "nacimiento": "2005-12-26",
+      "nombre": "Kenia Alexandra",
+      "proceso": "ganar",
+      "sexo": "mujer",
+      "telefono": "6644112932"
+    },
+    "lesly-netzay-carrazco-parra": {
+      "batismo": "2016-05-01",
+      "celula": "41-2",
+      "direccion": "Geranios #1970 Florido IV",
+      "nacimiento": "",
+      "nombre": "Lesly Netzay Carrazco Parra",
+      "proceso": "discipular",
+      "sexo": "mujer",
+      "telefono": "6645424658"
+    },
+    "lizeth-ramirez": {
+      "celula": "41-3",
+      "direccion": "Delicias III, privada temozón, #40",
+      "nacimiento": "2004-07-05",
+      "nombre": "Lizeth Ramirez",
+      "proceso": "ganar",
+      "sexo": "mujer",
+      "telefono": "6642481516"
+    },
+    "luis-fernando": {
+      "celula": "41-1",
+      "direccion": "Florido 4 seccion",
+      "nacimiento": "1998-03-24",
+      "nombre": "Luis Fernando",
+      "proceso": "ganar",
+      "sexo": "hombre",
+      "telefono": "6644250434"
+    },
+    "maria-frida-lopez-lugo": {
+      "celula": "",
+      "direccion": "Santa fe, Zina",
+      "nacimiento": "2000-12-23",
+      "nombre": "María Frida López Lugo",
+      "proceso": "ganar",
+      "sexo": "mujer",
+      "telefono": "6647945935"
+    },
+    "martha-yesenia-chimal-linares": {
+      "celula": "41-2",
+      "direccion": "Calle Arrayán Florido II",
+      "nacimiento": "2003-11-03",
+      "nombre": "Martha Yesenia Chimal Linares",
+      "proceso": "ganar",
+      "sexo": "mujer",
+      "telefono": "6647276351"
+    },
+    "mia-alleli=torres": {
+      "celula": "41-2",
+      "direccion": "",
+      "nacimiento": "",
+      "nombre": "Mia Alleli Torres",
+      "proceso": "ganar",
+      "sexo": "mujer"
+    },
+    "miguel-rubio-casillas": {
+      "bautismo": "2012-12-21",
+      "celula": "41-1",
+      "direccion": "Acasia #9805, Florido III",
+      "nombre": "Miguel Rubio Casillas",
+      "proceso": "discipular",
+      "sexo": "hombre",
+      "telefono": "6645729332"
+    },
+    "mladenca-yamileth-diaz-juarez": {
+      "celula": "41-2",
+      "direccion": "Pipila calle # 2",
+      "nacimiento": "2004-10-18",
+      "nombre": "Mladenca Yamileth Díaz Juarez",
+      "proceso": "ganar",
+      "sexo": "mujer",
+      "telefono": "6644750439"
+    },
+    "naomi-arumihsy-yshimura-hernández": {
+      "celula": "41-2",
+      "direccion": "Tibuquina 9525, Florido IV",
+      "nacimiento": "2006-04-22",
+      "nombre": "Naomi Arumihsy Yshimura Hernández",
+      "proceso": "ganar",
+      "sexo": "mujer",
+      "telefono": "6641768695"
+    },
+    "paola-balderas": {
+      "celula": "41-2",
+      "direccion": "Florido",
+      "nacimiento": "2003-04-25",
+      "nombre": "Paola Balderas",
+      "proceso": "ganar",
+      "sexo": "mujer",
+      "telefono": ""
+    },
+    "rebeca-raquel-moreno-garcia": {
+      "bautismo": "2016-05-01",
+      "celula": "41-3",
+      "direccion": "Cañaveral #48, Delicias I",
+      "nombre": "Rebeca Raquel Moreno García",
+      "proceso": "discipular",
+      "sexo": "mujer",
+      "telefono": "6645081502"
+    },
+    "rosa-isela-vazquez-sales": {
+      "celula": "41-3",
+      "direccion": "Delicias 3, tejocote",
+      "guia": "rebeca-raquel-moreno-garcia",
+      "nacimiento": "2004-01-09",
+      "nombre": "Rosa Isela Vazques Sales",
+      "proceso": "ganar",
+      "sexo": "mujer",
+      "telefono": "6648044497"
+    },
+    "stephanie-andrea-rodriguez-perez": {
+      "celula": "41-3",
+      "direccion": "Delicias III, privada temozón, #40",
+      "ep": "Sábado - 13:00",
+      "guia": "jesus-daniel-medina-cruz",
+      "nacimiento": "2004-01-07",
+      "nombre": "Stéphanie Andrea Rodriguez Castro",
+      "proceso": "afirmar",
+      "sexo": "mujer",
+      "telefono": "6642533532"
+    },
+    "vanessa-moncada-reyes": {
+      "batismo": "2017-04-16",
+      "celula": "41-2",
+      "direccion": "Prolongación Azteca #426, Mariano Matamoros",
+      "nacimiento": "",
+      "nombre": "Vanessa Moncada Reyes",
+      "proceso": "discipular",
+      "sexo": "mujer",
+      "telefono": "6646160548"
+    },
+    "yecxal-antonio-glez-alvarado": {
+      "celula": "41-3",
+      "direccion": "Delicias III, Privada Santa María, Calle Peñuela",
+      "ep": "Sábado - 09:00",
+      "guia": "jesus-daniel-medina-cruz",
+      "nacimiento": "2003-01-07",
+      "nombre": "Yecxal Antonio Glez Alvarado",
+      "proceso": "ganar",
+      "sexo": "hombre",
+      "telefono": ""
+    }
+  },
+  "Procesos": [
+    {
+      "etapas": [
+        {
+          "title": "Encuentro",
+          "verbos": [
+            {
+              "icon": "thumbs-up",
+              "title": "Motivar"
+            },
+            {
+              "icon": "contacts",
+              "title": "Integrar"
+            }
+          ]
+        }
+      ],
+      "initial": "G",
+      "title": "ganar"
+    },
+    {
+      "etapas": [],
+      "initial": "A",
+      "title": "afirmar"
+    },
+    {
+      "etapas": [],
+      "initial": "D",
+      "title": "discipular"
+    }
+  ]
+}

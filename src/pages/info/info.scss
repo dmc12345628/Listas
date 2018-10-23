@@ -1,0 +1,24 @@
+page-info {
+  button {
+    position: absolute !important;
+    top: 0px !important;
+    right: 0 !important;
+    width: 20px !important;
+    height: 20px !important;
+    font-size: 12pt !important;
+  }
+
+  .hombre {
+    ion-icon {
+      font-size: 22pt;
+      color: #2196F3;
+    }
+  }
+
+  .mujer {
+    ion-icon {
+      font-size: 22pt;
+      color: #E91E63;
+    }
+  }
+}

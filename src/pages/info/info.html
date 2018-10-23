@@ -1,0 +1,17 @@
+<ion-content padding>
+  <ion-title>
+    <ion-avatar item-start class="{{ persona.sexo }}">
+      <ion-icon name="contact"></ion-icon>
+      {{persona.nombre}}
+      <button ion-button clear (click)="closeModal()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-avatar>
+  </ion-title>
+  <h5>Teléfono: <a (click)="call(persona)">{{persona.telefono}}</a></h5>
+  <h5>Dirección: {{persona.direccion}}</h5>
+  <h5>Nacimiento: {{persona.nacimiento}}</h5>
+  <h5 *ngIf="persona.proceso === 'discipular' || persona.proceso === 'afirmar'">Bautismo: {{persona.bautismo}}</h5>
+  <h5>Guía: {{guia.nombre}}</h5>
+  <h5 *ngIf="persona.proceso !== 'discipular'">EP: {{persona.ep}}</h5>
+</ion-content>

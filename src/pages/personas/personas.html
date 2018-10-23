@@ -1,11 +1,11 @@
 <ion-header>
-  <ion-navbar color="primary">
+  <ion-navbar color="{{_procesos.proceso.title}}">
     <ion-toolbar>
       <button menuToggle ion-button icon-only>
           <ion-icon name="menu"></ion-icon>
       </button>
       <ion-title>
-        Bautizados
+        {{_procesos.proceso.title | titlecase}}
       </ion-title>
     </ion-toolbar>
   </ion-navbar>
@@ -13,7 +13,7 @@
 
 <ion-content padding>
   <form [formGroup]="celulaForm">
-    <ion-segment formControlName="celulas">
+    <ion-segment formControlName="celulas" color="{{_procesos.proceso.title}}">
       <ion-segment-button
         value="41-1"
         (click)="filterByCelula('41-1')">
@@ -33,24 +33,42 @@
   </form>
 
   <ion-list>
-    <ion-item-sliding #item *ngFor="let bautizado of bautizados$ | async">
-      <ion-item>
-        <ion-avatar item-start class="{{ bautizado.sexo }}">
+    <ion-item-sliding #item *ngFor="let amigo of amigos$ | async">
+      <ion-item (click)="showInfoDialog(amigo)">
+        <ion-avatar item-start class="{{ amigo.sexo }}">
           <ion-icon name="contact"></ion-icon>
         </ion-avatar>
-        <h2>{{bautizado.nombre}}</h2>
-        <p>{{bautizado.telefono}}</p>
+        <h2>{{amigo.nombre}}</h2>
+        <p>{{amigo.telefono}}</p>
       </ion-item>
 
       <ion-item-options side="right">
         <button ion-button
           class="clipboard"
-          [attr.data-clipboard-text]="bautizado.telefono"
-          (click)="call(bautizado)">
+          [attr.data-clipboard-text]="amigo.telefono"
+          (click)="call(amigo)">
           <ion-icon name="call"></ion-icon>
           Llamar
         </button>
       </ion-item-options>
     </ion-item-sliding>
   </ion-list>
+
+  <ion-fab bottom right #fab>
+    <button ion-fab color="{{_procesos.proceso.title}}">
+      {{_procesos.proceso.initial}}
+    </button>
+    <ion-fab-list side="top">
+      <button ion-fab
+        color="{{_procesos.procesos[1].title}}"
+        (click)="setProceso(1, fab)">
+        {{_procesos.procesos[1].initial}}
+      </button>
+      <button ion-fab
+        color="{{_procesos.procesos[2].title}}"
+        (click)="setProceso(2, fab)">
+        {{_procesos.procesos[2].initial}}
+      </button>
+    </ion-fab-list>
+  </ion-fab>
 </ion-content>

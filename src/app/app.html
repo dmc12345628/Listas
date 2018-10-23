@@ -1,7 +1,9 @@
 <ion-menu [content]="content">
   <ion-header>
-      <ion-toolbar color="primary">
-          <ion-title>Paginas</ion-title>
+      <ion-toolbar color="{{_procesos.proceso.title}}">
+          <ion-title>
+            {{_procesos.proceso.title | titlecase}}
+          </ion-title>
       </ion-toolbar>
   </ion-header>
   <ion-content>
@@ -9,21 +11,24 @@
       <ion-list-header>
         Herramientas
       </ion-list-header>
-      <button menuToggle ion-item (click)="openPage(tabsPage)">Listas</button>
-      <ion-list-header>
-        Etapa Fiesta
+      <button menuToggle ion-item (click)="openPage(personasPage)">Listas</button>
+
+      <ion-list-header *ngIf="_procesos.etapas.length > 0">
+        Etapas
       </ion-list-header>
-      <button menuToggle ion-item *ngFor="let verbo of etapaFiesta"
-        (click)="openPage(verbo.page)">
-        {{verbo.title}}
-      </button>
-      <ion-list-header>
-        Etapa Encuentro
-      </ion-list-header>
-      <button menuToggle ion-item *ngFor="let verbo of etapaEncuentro"
-        (click)="openPage(verbo.page)">
-        {{verbo.title}}
-      </button>
+
+      <div *ngFor="let etapa of _procesos.etapas">
+        <ion-item-divider>
+          {{etapa.title}}
+        </ion-item-divider>
+        <button menuToggle ion-item *ngFor="let verbo of etapa.verbos"
+          (click)="openPage(verbo.page)">
+          <ion-icon name="{{verbo.icon}}"
+            item-start
+            color="gray"></ion-icon>
+          {{verbo.title}}
+        </button>
+      </div>
     </ion-list>
   </ion-content>
 </ion-menu>
