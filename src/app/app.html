@@ -1,17 +1,37 @@
 <ion-menu [content]="content">
   <ion-header>
-      <ion-toolbar color="{{_procesos.proceso.title}}">
-          <ion-title>
-            {{_procesos.proceso.title | titlecase}}
-          </ion-title>
-      </ion-toolbar>
+    <ion-list *ngIf="_session.user">
+      <button menuToggle ion-item (click)="openProfile()">
+        <ion-title>
+          <ion-avatar item-start class="{{ _session.user.sexo }}"
+            style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+            <ion-icon name="contact"></ion-icon>
+            {{_session.user.nombre}}
+          </ion-avatar>
+        </ion-title>
+      </button>
+      <button menuToggle ion-item clear (click)="loggout()">
+        Desconectarse
+      </button>
+    </ion-list>
   </ion-header>
+
   <ion-content>
     <ion-list>
+      <ion-list-header color="{{_procesos.proceso.title}}">
+        <ion-title>
+          {{_procesos.proceso.title | titlecase}}
+        </ion-title>
+      </ion-list-header>
       <ion-list-header>
         Herramientas
       </ion-list-header>
-      <button menuToggle ion-item (click)="openPage(personasPage)">Listas</button>
+      <button menuToggle ion-item (click)="openPage(personasPage)">
+        Listas
+      </button>
+      <!-- <button menuToggle ion-item (click)="openPage(estudiosPage)">
+        Estudios
+      </button> -->
 
       <ion-list-header *ngIf="_procesos.etapas.length > 0">
         Etapas

@@ -1,0 +1,15 @@
+<ion-content padding >
+  <ion-row>
+    <ion-col text-center>
+      <img src="assets/icon/favicon.ico">
+      <ion-title>Sistema Célula</ion-title>
+    </ion-col>
+  </ion-row>
+  <form [formGroup]="loginForm">
+    <ion-item>
+      <ion-label color="primary" floating>Nombre de usuario</ion-label>
+      <ion-input formControlName="nickname"></ion-input>
+    </ion-item>
+  </form>
+  <button ion-button full (click)="login()">Conectarse</button>
+</ion-content>

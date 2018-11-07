@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Proceso } from '../../models/Proceso';
 import { MotivarPage } from '../../pages/procesos/ganar/encuentro/motivar/motivar';
 import { IntegrarPage } from '../../pages/procesos/ganar/encuentro/integrar/integrar';
+import { ConsolidarPage } from '../../pages/procesos/ganar/encuentro/consolidar/consolidar';
 
 @Injectable()
 export class ProcesosService {
@@ -23,6 +24,11 @@ export class ProcesosService {
               title: 'Integrar',
               icon: 'contacts',
               page: IntegrarPage
+            },
+            {
+              title: 'Consolidar',
+              icon: 'cube',
+              page: ConsolidarPage
             },
           ]
         }

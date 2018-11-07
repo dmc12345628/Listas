@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, ToastController, AlertController, ModalController, FabContainer } from 'ionic-angular';
+import { NavController, ToastController, ModalController, FabContainer } from 'ionic-angular';
 import { Observable, BehaviorSubject, combineLatest } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
 import * as Clipboard from 'clipboard/dist/clipboard.min.js';
@@ -17,56 +17,38 @@ import { InfoModal } from '../../modals/info/info';
 import { ProcesosService } from '../../services/procesos/Procesos.service';
 
 @Component({
-  selector: 'page-personas',
-  templateUrl: 'personas.html'
+  selector: 'page-estudios',
+  templateUrl: 'estudios.html'
 })
-export class PersonasPage {
+export class EstudiosPage {
   celulaForm: FormGroup;
 
   amigos$: Observable<any[]>;
-  celulaFilter$: BehaviorSubject<string|null>;
-  procesoFilter$: BehaviorSubject<string|null>;
+  weekDayFilter$: BehaviorSubject<string|null>;
 
-  constructor(private modalCtrl: ModalController,
+  constructor(public navCtrl: NavController,
+    private modalCtrl: ModalController,
     private afs: AngularFirestore,
     private callNumber: CallNumber,
     private fb: FormBuilder,
     public toastCtrl: ToastController,
     public _procesos: ProcesosService) {
+    this.weekDayFilter$ = new BehaviorSubject(null);
 
-    this.celulaFilter$ = new BehaviorSubject(null);
-    this.procesoFilter$ = new BehaviorSubject(null);
     this.amigos$ = combineLatest(
-      this.celulaFilter$,
-      this.procesoFilter$
+      this.weekDayFilter$
     ).pipe(
-      switchMap(([celula, proceso]) =>
+      switchMap(([weekDay]) =>
         afs.collection('Personas', ref => {
-          console.log(celula, proceso);
+          console.log(weekDay);
           let query : firebase.firestore.CollectionReference | firebase.firestore.Query = ref;
-          if (celula) {
-            query = query.where('celula', '==', celula);
-          }
-          if (proceso) {
-            query = query.where('proceso', '==', proceso);
+          if (weekDay) {
+            query = query.where('ep', 'array-contains', weekDay);
           }
           return query;
         }).valueChanges()
       )
     );
-
-    // if (afs.persistenceEnabled$.subscribe((enable) => {
-    //   console.log(enable);
-    //   if (!enable) {
-    //     afs.firestore.enablePersistence().catch(function(err) {
-    //       if (err.code == 'failed-precondition') {
-    //         console.log('failed-precondition');
-    //       } else if (err.code == 'unimplemented') {
-    //         console.log('unimplemented');
-    //       }
-    //     });
-    //   }
-    // }));
   }
 
   ngOnInit(): void {
@@ -74,18 +56,13 @@ export class PersonasPage {
       celulas: ['', Validators.required],
     });
     this.celulaForm.get('celulas').setValue('41-1');
-    this.filterByCelula('41-1');
-    this.filterByProceso('ganar');
+    this.filterByWeekDay(null);
 
     let clipboard = new Clipboard('.clipboard');
   }
 
-  filterByCelula(celula: string|null) {
-    this.celulaFilter$.next(celula);
-  }
-
-  filterByProceso(proceso: string|null) {
-    this.procesoFilter$.next(proceso);
+  filterByWeekDay(weekDay: string|null) {
+    this.weekDayFilter$.next(weekDay);
   }
 
   call(persona: Persona) {
@@ -127,11 +104,5 @@ export class PersonasPage {
     } else {
       this.showMsg('Este amigo no recibe EP u.u');
     }
-  }
-
-  setProceso(procesoIndex, fab: FabContainer) {
-    fab.close();
-    this.filterByProceso(this._procesos.procesos[procesoIndex].title);
-    this._procesos.setProceso(procesoIndex);
   }
 }

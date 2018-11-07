@@ -4,10 +4,10 @@ import { CallNumber } from '@ionic-native/call-number';
 import { Persona } from '../../models/Persona';
 
 @Component({
-  selector: 'page-info',
+  selector: 'modal-info',
   templateUrl: 'info.html'
 })
-export class InfoPage {
+export class InfoModal {
 
   persona: Persona;
   guia: Persona;

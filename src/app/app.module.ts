@@ -1,13 +1,21 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { IonicStorageModule } from '@ionic/storage';
 import { MyApp } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { InfoPage } from '../pages/info/info';
+// modals
+import { InfoModal } from '../modals/info/info';
+// pages
+import { LoginPage } from '../pages/login/login';
+import { EstudiosPage } from '../pages/estudios/estudios';
 import { PersonasPage } from '../pages/personas/personas';
+// procesos
+// encuentro
 import { MotivarPage } from '../pages/procesos/ganar/encuentro/motivar/motivar';
 import { IntegrarPage } from '../pages/procesos/ganar/encuentro/integrar/integrar';
+import { ConsolidarPage } from '../pages/procesos/ganar/encuentro/consolidar/consolidar';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -22,20 +30,27 @@ import { environment } from '../environments/environment';
 
 // services
 import { ProcesosService } from '../services/procesos/Procesos.service';
+import { SessionService } from '../services/session/Session.service';
 
 @NgModule({
   declarations: [
     MyApp,
-    InfoPage,
+    // modals
+    InfoModal,
+    // pages
+    LoginPage,
+    EstudiosPage,
     PersonasPage,
     // procesos
     // encuentro
     MotivarPage,
-    IntegrarPage
+    IntegrarPage,
+    ConsolidarPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot(),
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     ReactiveFormsModule,
@@ -43,12 +58,17 @@ import { ProcesosService } from '../services/procesos/Procesos.service';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    InfoPage,
+    // modal
+    InfoModal,
+    // pages
+    LoginPage,
+    EstudiosPage,
     PersonasPage,
     // procesos
     // encuentro
     MotivarPage,
-    IntegrarPage
+    IntegrarPage,
+    ConsolidarPage,
   ],
   providers: [
     StatusBar,
@@ -56,7 +76,8 @@ import { ProcesosService } from '../services/procesos/Procesos.service';
     CallNumber,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     // services
-    ProcesosService
+    ProcesosService,
+    SessionService
   ]
 })
 export class AppModule {}

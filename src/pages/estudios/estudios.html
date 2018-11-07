@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-toolbar>
+      <button menuToggle ion-button icon-only>
+          <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>
+        {{_procesos.proceso.title | titlecase}}
+      </ion-title>
+    </ion-toolbar>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form [formGroup]="celulaForm">
+    <ion-segment formControlName="celulas" color="primary">
+      <ion-segment-button
+        value="null"
+        (click)="filterByWeekDay(null)">
+        Siguiente
+      </ion-segment-button>
+      <ion-segment-button
+        value="lunes"
+        (click)="filterByWeekDay('Sábado')">
+        Sábado
+      </ion-segment-button>
+    </ion-segment>
+  </form>
+
+  <ion-list>
+    <ion-item-sliding #item *ngFor="let amigo of amigos$ | async">
+      <ion-item (click)="showInfoDialog(amigo)">
+        <ion-avatar item-start class="amigo">
+          <ion-icon name="contact" color="{{ amigo.proceso }}"></ion-icon>
+        </ion-avatar>
+        <h2>{{amigo.nombre}}</h2>
+        <p>{{amigo.telefono}}</p>
+      </ion-item>
+
+      <ion-item-options side="right">
+        <button ion-button
+          class="clipboard"
+          [attr.data-clipboard-text]="amigo.telefono"
+          (click)="call(amigo)">
+          <ion-icon name="call"></ion-icon>
+          Llamar
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>
