@@ -16,6 +16,8 @@ import { PersonasPage } from '../pages/personas/personas';
 import { MotivarPage } from '../pages/procesos/ganar/encuentro/motivar/motivar';
 import { IntegrarPage } from '../pages/procesos/ganar/encuentro/integrar/integrar';
 import { ConsolidarPage } from '../pages/procesos/ganar/encuentro/consolidar/consolidar';
+import { PrepararPage } from '../pages/procesos/ganar/encuentro/preparar/preparar';
+import { SantificarPage } from '../pages/procesos/ganar/encuentro/santificar/santificar';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -45,7 +47,9 @@ import { SessionService } from '../services/session/Session.service';
     // encuentro
     MotivarPage,
     IntegrarPage,
-    ConsolidarPage
+    ConsolidarPage,
+    PrepararPage,
+    SantificarPage
   ],
   imports: [
     BrowserModule,
@@ -69,6 +73,8 @@ import { SessionService } from '../services/session/Session.service';
     MotivarPage,
     IntegrarPage,
     ConsolidarPage,
+    PrepararPage,
+    SantificarPage
   ],
   providers: [
     StatusBar,

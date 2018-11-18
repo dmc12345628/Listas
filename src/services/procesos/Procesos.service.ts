@@ -3,6 +3,8 @@ import { Proceso } from '../../models/Proceso';
 import { MotivarPage } from '../../pages/procesos/ganar/encuentro/motivar/motivar';
 import { IntegrarPage } from '../../pages/procesos/ganar/encuentro/integrar/integrar';
 import { ConsolidarPage } from '../../pages/procesos/ganar/encuentro/consolidar/consolidar';
+import { PrepararPage } from '../../pages/procesos/ganar/encuentro/preparar/preparar';
+import { SantificarPage } from '../../pages/procesos/ganar/encuentro/santificar/santificar';
 
 @Injectable()
 export class ProcesosService {
@@ -29,6 +31,16 @@ export class ProcesosService {
               title: 'Consolidar',
               icon: 'cube',
               page: ConsolidarPage
+            },
+            {
+              title: 'Preparar',
+              icon: 'timer',
+              page: PrepararPage
+            },
+            {
+              title: 'Santificar',
+              icon: 'body',
+              page: SantificarPage
             },
           ]
         }
